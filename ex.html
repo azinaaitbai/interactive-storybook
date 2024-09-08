@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Storybook</title>
+    <link rel="stylesheet" href="ex.css" />
+  </head>
+  <body>
+    <video id="background-video" autoplay loop>
+      <source src="erzhanagai.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div id="background-text" class="hidden"></div>
+
+    <div id="points-display">Points: <span id="points">0</span></div>
+
+    <button id="restart-btn">Restart</button>
+
+    <div id="choices-container"></div>
+
+    <div id="fullscreen-video-container" class="hidden">
+      <video id="foreground-video" controls muted>
+        <source src="erzhanagai.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <script src="ex.js"></script>
+  </body>
+</html>
